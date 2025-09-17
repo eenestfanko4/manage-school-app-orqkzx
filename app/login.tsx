@@ -40,7 +40,8 @@ export default function LoginScreen() {
       <View style={styles.container}>
         <View style={styles.header}>
           <Icon name="school" size={64} color={colors.primary} />
-          <Text style={styles.title}>School Admin</Text>
+          <Text style={styles.schoolName}>Heighten Brain School</Text>
+          <Text style={styles.title}>Administration Portal</Text>
           <Text style={styles.subtitle}>Sign in to your account</Text>
         </View>
 
@@ -96,7 +97,7 @@ export default function LoginScreen() {
 
           <View style={styles.demoContainer}>
             <Text style={styles.demoTitle}>Demo Credentials:</Text>
-            <Text style={styles.demoText}>Email: admin@school.edu</Text>
+            <Text style={styles.demoText}>Email: admin@heightenbrain.edu</Text>
             <Text style={styles.demoText}>Password: password</Text>
           </View>
         </View>
@@ -115,11 +116,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 48,
   },
-  title: {
-    fontSize: 32,
-    fontWeight: '700',
-    color: colors.text,
+  schoolName: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: colors.primary,
     marginTop: 16,
+    marginBottom: 4,
+    textAlign: 'center',
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: colors.text,
     marginBottom: 8,
   },
   subtitle: {

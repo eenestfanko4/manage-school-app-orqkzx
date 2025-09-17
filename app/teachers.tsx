@@ -36,7 +36,10 @@ export default function TeachersScreen() {
         <TouchableOpacity style={styles.backButton} onPress={handleBack}>
           <Icon name="arrow-back" size={24} color={colors.text} />
         </TouchableOpacity>
-        <Text style={styles.title}>Teachers</Text>
+        <View style={styles.headerCenter}>
+          <Text style={styles.schoolName}>Heighten Brain School</Text>
+          <Text style={styles.title}>Teachers</Text>
+        </View>
         <TouchableOpacity style={styles.addButton}>
           <Icon name="add" size={24} color={colors.text} />
         </TouchableOpacity>
@@ -180,6 +183,16 @@ const styles = StyleSheet.create({
   },
   backButton: {
     padding: 8,
+  },
+  headerCenter: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  schoolName: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: colors.primary,
+    marginBottom: 2,
   },
   title: {
     fontSize: 20,

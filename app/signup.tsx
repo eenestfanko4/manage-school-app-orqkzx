@@ -64,8 +64,9 @@ export default function SignupScreen() {
             <Icon name="arrow-back" size={24} color={colors.primary} />
           </TouchableOpacity>
           <Icon name="school" size={64} color={colors.primary} />
-          <Text style={styles.title}>Create Account</Text>
-          <Text style={styles.subtitle}>Join our school community</Text>
+          <Text style={styles.schoolName}>Heighten Brain School</Text>
+          <Text style={styles.title}>Join Our Community</Text>
+          <Text style={styles.subtitle}>Create your account to get started</Text>
         </View>
 
         <View style={styles.form}>
@@ -188,16 +189,24 @@ const styles = StyleSheet.create({
     padding: 8,
     marginBottom: 16,
   },
-  title: {
-    fontSize: 32,
-    fontWeight: '700',
-    color: colors.text,
+  schoolName: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: colors.primary,
     marginTop: 16,
+    marginBottom: 4,
+    textAlign: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: colors.text,
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
     color: colors.textSecondary,
+    textAlign: 'center',
   },
   form: {
     width: '100%',

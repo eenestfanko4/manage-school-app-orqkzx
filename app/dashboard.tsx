@@ -35,9 +35,9 @@ export default function DashboardScreen() {
   return (
     <SafeAreaView style={commonStyles.container}>
       <View style={styles.header}>
-        <View>
-          <Text style={styles.greeting}>Welcome back,</Text>
-          <Text style={styles.userName}>{user?.name || 'User'}</Text>
+        <View style={styles.headerLeft}>
+          <Text style={styles.schoolName}>Heighten Brain School</Text>
+          <Text style={styles.greeting}>Welcome back, {user?.name || 'User'}</Text>
         </View>
         <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
           <Icon name="log-out-outline" size={24} color={colors.primary} />
@@ -141,14 +141,18 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
   },
+  headerLeft: {
+    flex: 1,
+  },
+  schoolName: {
+    fontSize: 20,
+    fontWeight: '800',
+    color: colors.primary,
+    marginBottom: 2,
+  },
   greeting: {
     fontSize: 16,
     color: colors.textSecondary,
-  },
-  userName: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: colors.text,
   },
   logoutButton: {
     padding: 8,
