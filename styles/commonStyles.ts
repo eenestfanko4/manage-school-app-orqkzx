@@ -2,19 +2,21 @@
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 export const colors = {
-  primary: '#1E3A8A',      // Dark blue
-  secondary: '#3B82F6',    // Medium blue
-  accent: '#F97316',       // Orange
-  background: '#F8FAFC',   // Light gray
-  backgroundAlt: '#FFFFFF', // White
-  text: '#1E3A8A',         // Dark blue text
-  textSecondary: '#64748B', // Gray text
-  grey: '#E2E8F0',         // Light gray
+  primary: '#722F37',      // Wine/Burgundy
+  secondary: '#8B4A52',    // Lighter wine
+  accent: '#A0616A',       // Medium wine
+  background: '#FFFFFF',   // White
+  backgroundAlt: '#F8F8F8', // Very light gray (almost white)
+  text: '#722F37',         // Wine text
+  textSecondary: '#8B4A52', // Lighter wine text
+  grey: '#E8E8E8',         // Light gray
   card: '#FFFFFF',         // White cards
-  success: '#10B981',      // Green
-  warning: '#F59E0B',      // Yellow
-  error: '#EF4444',        // Red
-  border: '#E2E8F0',       // Light gray border
+  success: '#10B981',      // Green (kept for status)
+  warning: '#F59E0B',      // Yellow (kept for status)
+  error: '#EF4444',        // Red (kept for status)
+  border: '#E8E8E8',       // Light gray border
+  wine: '#722F37',         // Main wine color
+  white: '#FFFFFF',        // Pure white
 };
 
 export const buttonStyles = StyleSheet.create({
@@ -95,7 +97,7 @@ export const commonStyles = StyleSheet.create({
     borderRadius: 12,
     padding: 16,
     marginBottom: 16,
-    boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0px 2px 8px rgba(114, 47, 55, 0.1)',
     elevation: 3,
     borderWidth: 1,
     borderColor: colors.border,
